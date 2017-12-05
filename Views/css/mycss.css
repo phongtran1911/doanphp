@@ -1,0 +1,30 @@
+#idMenu {
+	    background-color: #03A9F4;
+	    border-color: #69c;
+}
+#idMenu li{
+color: #673ab7;
+}
+#idMenu li:hover {
+	background-color:rgba(0,0,0,.5);
+     -webkit-transition:all .5s ease-out;  
+      -moz-transition:all .5s ease-out;  
+       -ms-transition:all .5s ease-out;  
+}
+#idMenu li {
+	text-decoration: none;
+}
+#idbuton button:hover {
+	background-color:rgba(0,0,0,.5);
+}
+#imgSlide img {
+	width: 100%;
+	height: 50%;
+}
+#logoIndex img {
+	width: 114px;
+	height: 36px;
+}
+/* trang chi tiết */
+
+
