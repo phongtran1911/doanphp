@@ -167,47 +167,40 @@ if(isset($_POST['muangay']))
             <?php
             foreach ($hinhsp as $a) {
                 ?>
-                <div id="differentview" class="moreOptopm carousel slide">
-    <div class="carousel-inner">
-      <div class="item active">
-       <a href="Views/img/products/<?=$a->Tenhinh?>"> <img style="width:29%" src="Views/img/products/<?=$a->Tenhinh?>" alt=""/></a>
-      </div>
-                </div>
-              </div>             
-                <?php                
+        <div id="differentview" class="moreOptopm carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+           <a href="Views/img/products/<?=$a->Tenhinh?>"> <img style="width:29%" src="Views/img/products/<?=$a->Tenhinh?>" alt=""/></a>
+          </div>
+        </div>
+        </div>             
+            <?php                
             }
             ?>
-
-           
             </div>
-            <form action="#" method="post" accept-charset="utf-8">
+        <form action="#" method="post" accept-charset="utf-8">
             <div class="span6">
                 <h3><?=$chitietsanpham->TenSanPham?></h3>
                 <small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>
                 <hr class="soft"/>
-                <form class="form-horizontal qtyFrm">
-                  <div class="control-group">
+                <div class="control-group">
                     <label class="control-label"><span><?=number_format($chitietsanpham->DonGia)?>đ</span></label>
                     <div class="controls">
-                    <input type="number" class="span1" placeholder="Số lượng" style="width: 80px;"/>
-                      <!-- <form action="#" method="post" accept-charset="utf-8"> -->
-                        
+                    <input type="number" class="span1" placeholder="Số lượng" style="width: 80px;"/>    
                      <button type="submit" name="muangay" class="btn btn-large btn-primary pull-right"> Add to cart <i class=" icon-shopping-cart"></i></button>
-                   </form>  </div>
-                  </div>
-             
-
-                <hr class="soft clr"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    <hr class="soft clr"/>
                 <p>
                 <?=$chitietsanpham->TomTat?>
-                
                 </p>
                 <a class="btn btn-small pull-right" href="#detail">More Details</a>
                 <br class="clr"/>
             <a href="#" name="detail"></a>
             <hr class="soft"/>
-            </div>
-               </form>
+</div>
             <div class="span9">
             <ul id="productDetail" class="nav nav-tabs">
               <li class="active"><a href="#home" data-toggle="tab">Sản phẩm chi tiết</a></li>
@@ -230,7 +223,7 @@ if(isset($_POST['muangay']))
                    <?php
                     foreach ($spcungloai as $value) {
                       ?>
-                    <div class="row">     
+                <div class="row">     
                         <div class="span2">
                            <a href="chitiet.php?id_sp=<?=$value->MaSanPham?>"> <img src="Views/img/products/<?=$value->HinhAnhSanPham?>" style="height: 150px; width: 100%;   "/></a>
                         </div>
@@ -244,14 +237,11 @@ if(isset($_POST['muangay']))
                             <br class="clr"/>
                         </div>
                         <div class="span3 alignR">
-                            <form class="form-horizontal qtyFrm">
                                 <h3><?=number_format($value->DonGia)?></h3>
-                                <div class="btn-group">
-                                 <button type="submit" name="muangay" class="btn btn-large btn-primary pull-right"> Add to Cart</button>
-                              </div>
-                            </form>
-                      </div>
-                  </div>
+
+                    
+                </div>
+            </div>
 
 
                       <?php  
@@ -266,7 +256,7 @@ if(isset($_POST['muangay']))
         </div>
           </div>
 
-    </div>
+</div>
 </div>
 </div>
 
