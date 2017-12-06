@@ -59,8 +59,7 @@ if(isset($_POST['muangay']))
                         foreach ($_SESSION['cart'] as $value) {
                             $total+=$value['soluong'];
                                 }
-                            echo "<li>có $total sản phẩm trong giỏ hàng</li>
-                                 ";
+                             echo '<li><a href ="giohang.php">('.$total.')<span class="glyphicon glyphicon-shopping-cart"></span></a></li>';
                         }
                   ?>
                              <li><a href="index.php">Trang Chủ</a></li>

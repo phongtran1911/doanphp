@@ -68,8 +68,7 @@ if(!isset($_SESSION["cart"])){
                         foreach ($_SESSION['cart'] as $value) {
                             $total+=$value['soluong'];
                                 }
-                            echo '<li><a href ="giohang.php">có '.$total.'  sản phẩm trong giỏ hàng</a></li>
-                                 ';
+                            echo '<li><a href ="giohang.php">('.$total.')<span class="glyphicon glyphicon-shopping-cart"></span></a></li>';
                                  
                                  
                         }
@@ -150,7 +149,7 @@ if(!isset($_SESSION["cart"])){
                 <td class="top-remove">
                     <h4><?php echo number_format($value["soluong"] * $value["tongtien"]) ?></h4>
                     <div class="close">
-                      <a href="xoa.php?idSP={$value['idSP']}"><h5>Remove</h5></a>
+                      <a href="xoa.php?idSP=<?php echo $value['idSP']?>"><h5>Remove</h5></a>
                     </div>
                 </td>
                 
