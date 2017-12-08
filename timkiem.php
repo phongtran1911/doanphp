@@ -1,7 +1,9 @@
 <?php
 session_start();
       include('Controllers/c_giohang.php');
+      include('Controllers/c_sanpham.php');
       $c_tintuc = new C_giohang();
+      $c_ahihi = new C_sanpham();
 if(isset($_POST['muangay']))
 {
      $c_tintuc->giohang();
@@ -96,7 +98,7 @@ if(isset($_POST['muangay']))
       if(isset($_POST['tukhoa']))
       {
          $key = $_POST['tukhoa'];
-         $news = $c_tintuc->timkiem($key);
+         $news = $c_ahihi->timkiem($key);
          ?>	
 
      <div class="container margin-top">
